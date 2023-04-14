@@ -11,9 +11,10 @@
 (map! "C-x k" #'kill-this-buffer)
 
 ;; easymotion overrides
-(map! :n "k" #'evilem-motion-previous-line)
-(map! :n "j" #'evilem-motion-next-line)
-(map! :n "l" #'evilem-motion-forward-word-begin)
-(map! :n "h" #'evilem-motion-backward-word-begin)
+(map! :n "C-k" #'evilem-motion-previous-line)
+(map! :n "C-j" #'evilem-motion-next-line)
+(map! :n "C-l" #'evilem-motion-forward-word-begin)
+(map! :n "C-h" #'evilem-motion-backward-word-begin)
 
+;; Definition popup
 (map! :n "K" #'lsp-ui-doc-toggle)
